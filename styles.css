@@ -20,16 +20,12 @@ header {
 
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
 nav ul {
-    list-style: none;
+    list-style-type: none;
     display: flex;
-    justify-content: center;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -37,7 +33,7 @@ nav ul li {
     font-size: 25px;
 }
 
-nav ul li:last-child {
+nav ul li {
     margin-right: 0;
 }
 
@@ -91,15 +87,22 @@ p {
 }
 
 .logo {
-    width: 50%;
+    width: 100px;
+    height: auto;
 }
+
 
 .menu {
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-evenly;
     font-size: 18px;
     font-weight: bold;
+}
+
+
+.burger-icon {
+    display: none;
 }
 
 .descriptif-festival {
@@ -210,6 +213,11 @@ p {
 
 .formulaire_contact h1 {
     color: black;
+}
+
+h1.acces-titre {
+    color: black;
+    margin-top: 50px;
 }
 
 form {
@@ -338,6 +346,23 @@ footer {
 .footer-contact {
     color: #FFFFFF;
     font-size: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.icon-text {
+    color: #FFFFFF;
+    align-items: center;
 }
 
 li {
@@ -353,7 +378,172 @@ a {
 
 /* Responsive */
 @media only screen and (max-width: 768px) {
-    .footer {
-        margin: 0;
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    nav ul {
+        display: none
+    }
+
+    .menu {
+        justify-content: space-evenly;
+    }
+
+    .burger-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bar {
+        width: 25px;
+        height: 3px;
+        background-color: #333;
+        margin: 5px;
+    }
+
+
+    #logo {
+        margin-bottom: 20px;
+
+    }
+
+    .festival h1 {
+        font-size: 32px;
+    }
+
+    .fiche_festival_1 h1 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .fiche_festival_2 h1 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .fiche_festival_3 h1 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .fiche_festival_4 h1 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .fiche_festival_5 h1 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .fiche_festival_6 h1 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .fiche_festival_7 h1 {
+        color: black;
+        font-size: 30px;
+    }
+
+    .movie-card {
+        display: block;
+    }
+
+    .movie-card img {
+        width: 90%;
+    }
+
+    img.fleche {
+        width: 20%;
+    }
+
+
+    .carousel-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .carousel-item {
+        flex-basis: 100%;
+        margin-left: 25%;
+    }
+
+    .contact-email {
+        margin-left: 0%;
+    }
+
+    .formulaire_contact {
+        margin-top: 0px;
+    }
+
+    .formulaire_contact h1 {
+        font-size: 24px;
+        margin-top: 40px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    h1.acces-titre {
+        padding: 20px 10px;
+        color: black;
+        font-size: 26px;
+    }
+
+    .acces {
+        margin: 50px 0;
+    }
+
+    .plan {
+        max-width: 100%;
+        height: auto;
+        margin-top: 50px;
+    }
+
+    .festival h1 {
+        margin: 0px;
+    }
+
+    .img-monceau {
+        width: 90%;
+        height: auto;
+        margin-left: 10px;
+    }
+
+    .parc-monceau {
+        font-size: 14px;
+    }
+
+    .acces {
+        text-align: center;
+    }
+
+    .plan {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        margin-top: 0px;
+    }
+
+    .footer-logo,
+    .social-icons,
+    .footer-text p {
+        text-align: center;
+        margin-bottom: 10px;
+        width: 50%;
+        font-size: 11px;
     }
 }
+
+;
